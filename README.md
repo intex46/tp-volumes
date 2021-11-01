@@ -10,6 +10,10 @@ tp sur les volumes docker
 * Testez l'option -v de la commande docker rm
 ## Tp2
 * Créez un Dockerfile utilisant l'image de base debian:stretch déclarant un volume
+```
+1 FROM debian:stretch
+2 VOLUME /mountPoint
+```
 * Construisez l'image à l'aide de la commande docker build et nommez la docker-vol
 * Inspectez l'image construite à l'aide de la commande docker inspect que voyez vous ?
 * Lancez un conteneur à partir de notre image docker-vol et Vérifiez la présence du dossier /mountPoint
