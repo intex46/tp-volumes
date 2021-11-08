@@ -39,7 +39,7 @@ ls -l /var/lib/docker/volumes/720e2a2478e70a7cb49ab7385b8be627d4b6ec52e6bb33063e
 ## Tp3
 * Lancer un conteneur à partir de l'image postgres:10 et utiliser les volumes docker pour héberger le contenu du dossier /var/lib/postgresql/data
 ```
-docker run --name postgresql -d -e POSTGRES_PASSWORD=test -v /data/postgresql:/var/lib/postgresql/data postgres:10
+docker run --name postgresql -d -e POSTGRES_PASSWORD=test -v "${PWD}"/data/postgresql:/var/lib/postgresql/data postgres:10 #only for linux / mac 
 ```
 * Entrez dans le conteneur que vous venez de créer et ajoutez une table nommée test contenant une colonne varchar data de taille 255 et ajoutez-y une entrée de votre choix
 ```
