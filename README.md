@@ -9,7 +9,7 @@ tp sur les volumes docker
 * Démarrez un second conteneur identique et afficher le contenu de /data.
 * Testez l'option -v de la commande docker rm
 ## Tp2
-* Créez un Dockerfile utilisant l'image de base debian:stretch déclarant un volume
+* Créez un Dockerfile utilisant l'image de base debian:stretch déclarant un volume /mountPoint
 * Construisez l'image à l'aide de la commande docker build et nommez la docker-vol
 * Inspectez l'image construite à l'aide de la commande docker inspect que voyez vous ?
 * Lancez un conteneur à partir de notre image docker-vol et Vérifiez la présence du dossier /mountPoint
