@@ -9,11 +9,7 @@ tp sur les volumes docker
 * Démarrez un second conteneur identique et afficher le contenu de /data.
 * Testez l'option -v de la commande docker rm
 ## Tp2
-* Créez un Dockerfile utilisant l'image de base debian:stretch déclarant un volume
-```
-1 FROM debian:stretch
-2 VOLUME /mountPoint
-```
+* Créez un Dockerfile utilisant l'image de base debian:stretch déclarant un volume /mountPoint
 * Construisez l'image à l'aide de la commande docker build et nommez la docker-vol
 ```
 1 docker build -t docker-vol .
